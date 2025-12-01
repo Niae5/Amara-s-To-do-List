@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do List App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>To-Do List</h1>
+
+    <!-- Search and Filter -->
+    <div class="controls">
+      <input type="text" id="search" placeholder="Search tasks...">
+      <select id="filter">
+        <option value="all">All</option>
+        <option value="completed">Completed</option>
+        <option value="pending">Pending</option>
+      </select>
+      <button id="sort-due">Sort by Due Date</button>
+      <button id="dark-mode-toggle">Dark Mode</button>
+    </div>
+
+    <!-- Add Task Form -->
+    <form id="todo-form">
+      <input type="text" id="todo-title" placeholder="Title" required>
+      <input type="text" id="todo-desc" placeholder="Description (optional)">
+      <input type="datetime-local" id="todo-due">
+      <button type="submit">Add Task</button>
+    </form>
+
+    <ul id="todo-list"></ul>
+  </div>
+  <div class="toast-container" id="toast-container"></div>
+
+  <script src="script.js"></script>
+
+<img src="">
+
+</body>
+</html>
